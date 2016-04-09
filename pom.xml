@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>net.sfws</groupId>
+	<artifactId>company</artifactId>
+	<name>company</name>
+	<version>0.0.1</version>
+	<packaging>pom</packaging>
+
+	<description>Company Parent-POM</description>
+
+	<organization>
+		<name>SF Web Solution</name>
+		<url>http://www.sfwebsolution.com</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<id>jaybrahms</id>
+			<name>Jay Brahms</name>
+			<email>jay.brahms@sfwebsolution.com</email>
+		</developer>
+	</developers>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jvm.source>1.8</jvm.source>
+		<jvm.target>1.8</jvm.target>
+	</properties>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${jvm.source}</source>
+					<target>${jvm.target}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>sfws.snapshots</id>
+			<name>SF Web Solution - Snapshots</name>
+			<url>http://10.0.0.2:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+		<repository>
+			<id>sfws.releases</id>
+			<name>SF Web Solution - Releases</name>
+			<url>http://10.0.0.2:8081/nexus/content/repositories/releases/</url>
+		</repository>
+	</distributionManagement>
+</project>
