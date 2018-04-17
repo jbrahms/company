@@ -5,7 +5,7 @@
 	<groupId>net.sfws</groupId>
 	<artifactId>company</artifactId>
 	<name>company</name>
-	<version>0.0.1</version>
+	<version>1.2.0</version>
 	<packaging>pom</packaging>
 
 	<description>Company Parent-POM</description>
@@ -46,12 +46,12 @@
 		<snapshotRepository>
 			<id>sfws.snapshots</id>
 			<name>SF Web Solution - Snapshots</name>
-			<url>http://10.0.0.2:8081/nexus/content/repositories/snapshots/</url>
+			<url>http://jaybrahms.com:8081/nexus/content/repositories/snapshots/</url>
 		</snapshotRepository>
 		<repository>
 			<id>sfws.releases</id>
 			<name>SF Web Solution - Releases</name>
-			<url>http://10.0.0.2:8081/nexus/content/repositories/releases/</url>
+			<url>http://jaybrahms.com:8081/nexus/content/repositories/releases/</url>
 		</repository>
 	</distributionManagement>
 </project>
